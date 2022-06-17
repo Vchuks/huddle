@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    width: 100%;
+    background-image: url(images/bg-hero.svg);
+    background-color: hsl(193, 100%, 96%);
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    color: hsl(192, 100%, 9%);
+    font-weight: 600;
+}
+nav button{
+    padding:10px 40px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    box-shadow:1px 0px 5px 1px hsl(210, 24%, 90%);
+}
+.build{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 3rem 0;
+}
+.first-build{
+    width: 100%;
+    color: hsl(192, 100%, 9%);
+}
+.first-build h1{
+    width: 80%;
+    font-weight: 600;
+   font-size: 40px;
+    line-height: 50px;
+}
+.first-build p{
+    width: 80%;
+    line-height: 30px;
+    margin: 2rem 0;
+    font-weight: 700;
+}
+.first-build button{
+    background-color: hsl(322, 100%, 66%);
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.second-build{
+    width: 100%;
+}
+.second-build img{
+    width: 100%;
+}
+main{
+    width: 100%;
+    padding-top: 5rem;
+}
+.card{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    box-shadow:1px 0px 10px 1px hsl(210, 24%, 90%);
+    display: grid;
+    grid-template-areas: 
+    'first-card second-card';
+    align-items: center;
+    padding: 5rem 2rem 5rem 5rem;
+    margin: 2rem 0;
+    color: hsl(192, 100%, 9%);
+}
+.first-card{
+    width:90%;
+    grid-area: 'first-card';
+    transition:transform 2s;
+}
+.first-card:hover{
+    transform: rotate(360deg);
+}
+.card p{
+    width: 80%;
+    color: hsl(208, 11%, 55%);
+    line-height: 30px;
+    margin: 2rem 0;
+}
+
+ #flow{
+    width: 80%;
+    margin: auto;
+    margin-right:0;
+ }
+#flow p{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+
+.second-card{
+    width: 100%;
+    grid-area: 'second-card';
+    justify-content: end;
+}
+.card img{
+    width: 80%;
+}
+.bottom-card{
+    width: 50%;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    box-shadow:1px 0px 5px 1px hsl(210, 24%, 90%);
+    padding: 3rem 2rem;
+    color: hsl(192, 100%, 9%);
+    background-color: #fff;
+    position: absolute;
+    top: -25%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+}
+#third-card{
+    margin-bottom: 20rem;
+}
+.bottom-card button{
+    background-color: hsl(322, 100%, 66%);
+    padding: 1.5rem 5rem;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+footer{
+    width: 100%;
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    position: relative;
+    padding-top: 7rem;
+}
+.footer-items{
+    display: flex;
+}
+footer p, footer li{
+    padding: 1rem 0;
+}
+.foot-one{
+    width: 100%;
+    padding: 2rem 0;
+    line-height: 35px;
+    display: grid;
+    grid-template-areas: "a b";
+}
+.foot-one i{
+    grid-area: 'a';
+    margin-right: 1rem;
+}
+.foot-one p{
+    grid-area: 'b';
+}
+.foot-two{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    
+}
+.foot-two a, .foot-two ul{
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+}
+.foot-two a:hover{
+    text-decoration: underline;
+}
+.foot-three{
+    width: 70%;
+    padding: 2rem 0;
+}
+.foot-three a{
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 30px;
+}
+.foot-three a:hover{
+    color: hsl(322, 100%, 66%);
+}
+.foot-three p{
+    margin-top: 50%;
+}
+
+
+@media (max-width:375px) {
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+    }
+    nav img{
+        width: 50%;
+    }
+    nav a{
+        text-decoration: none;
+        font-size: 14px;
+        color: hsl(192, 100%, 9%);
+        font-weight: 600;
+    }
+    nav button{
+        padding:8px 15px;
+        border-radius: 20px;
+    }
+    .build{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0 3rem 0;
+    }
+    .first-build{
+        width: 100%;
+        padding:1rem;
+        text-align:center;
+    }
+    .first-build h1{
+        width: 100%;
+       font-size: 25px;
+        line-height: 30px;
+    }
+    .first-build p{
+        width: 100%;
+        line-height: 30px;
+    }
+    .first-build button{
+        background-color: hsl(322, 100%, 66%);
+        padding: 1rem 3rem;
+        border-radius: 30px;
+        border: none;
+        color: #fff;
+        font-weight: 700;
+    }
+    .second-build{
+        width: 100%;
+    }
+    main{
+        padding-top: 1rem;
+    }
+    .card{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+    #flow2{
+        display: flex;
+        flex-direction: column;
+    }
+    .card h2{
+        font-size: 20px;
+    }
+    .card p{
+        width: 100%;
+        line-height: 30px;
+        margin: 1rem 0;
+    }
+    #flow2 .second-card {
+    margin-bottom: 0;
+    margin-top: 2rem;
+    }
+    .second-card{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    #flow{
+        width: 100%;
+    }
+    .bottom-card{
+        width: 90%;
+        border-radius: 15px;
+        padding: 2.5rem 0;
+        position: absolute;
+        top: -13%;
+        left: 5%;
+        right: 5%;
+        text-align: center;
+    }
+    .bottom-card h2{
+        font-size: 18px;
+        
+    }
+    #third-card{
+        margin-bottom: 15rem;
+    }
+    .bottom-card button{
+        background-color: hsl(322, 100%, 66%);
+        padding: 1rem 3rem;
+        border-radius: 25px;
+    }
+    footer{
+        padding-top: 7rem;
+        font-size: 16px;
+    }
+    footer img{
+        width: 50%;
+        margin-top: 2.5rem;
+    }
+    .footer-items{
+        display: flex;
+        flex-direction: column;
+    }
+    footer p, footer li{
+        padding: 0.5rem 0;
+    }
+    .foot-one{
+        line-height: 30px;
+    }
+    .foot-two{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+    
+    .foot-three{
+        width: 100%;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .foot-three p{
+        margin-top: 5%;
+        font-size: 14px;
+    }
+    
+}
